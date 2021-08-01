@@ -20,14 +20,16 @@ const App = () => {
 
 const handleSubmit = e => {
     e.preventDefault()
-    tasks.push({
-      text: task.text,
-      image: task.image
-    })
-    setTask({
-      text:"",
-      image:""
-    });
+    if (task.text || task.image) {
+      tasks.push({
+        text: task.text,
+        image: task.image
+      })
+      setTask({
+        text:"",
+        image:""
+      });
+    }
   }
 
   return (
@@ -67,6 +69,7 @@ const handleSubmit = e => {
         />
       ))}
     </>
+
     </>
   )
 }
