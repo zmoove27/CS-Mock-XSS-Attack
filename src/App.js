@@ -29,6 +29,7 @@ const handleSubmit = e => {
         text:"",
         image:""
       });
+      // Launch first attack here
     }
   }
 
@@ -69,7 +70,7 @@ const handleSubmit = e => {
         />
       ))}
     </>
-
+        {/* Launch second attack here. */}
     </>
   )
 }
